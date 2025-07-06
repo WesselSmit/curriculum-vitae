@@ -1,0 +1,24 @@
+:root {
+  /* typography */
+  --font-family: Outfit, -apple-system, blinkmacsystemfont, 'Roboto',
+    'Helvetica Neue', sans-serif;
+
+  --font-size-body: 2rem;
+  --font-size-title: 5rem;
+
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* colors */
+  --color-black: #000000;
+  --color-white: #FCF8EE;
+
+  /* spacings */
+  --spacing-s: 15px;
+  --spacing-m: 25px;
+  --spacing-l: 50px;
+  --spacing-xl: 80px;
+  --spacing-xxl: 110px;
+  --spacing-xxxl: 150px;
+}

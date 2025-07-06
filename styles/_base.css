@@ -7,10 +7,15 @@ html {
 body {
   overflow-x: hidden;
   min-height: 100dvh;
+  background-color: var(--color-white);
+  color: var(--color-black);
 
   /* set default font-size to 1.6rem to negate the reset above */
   font-size: 1.6rem;
-  text-rendering: optimizespeed;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-body);
+  text-rendering: optimizeSpeed;
   text-wrap: balance;
 }
 
