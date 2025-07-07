@@ -21,4 +21,7 @@
   --spacing-xl: 80px;
   --spacing-xxl: 110px;
   --spacing-xxxl: 150px;
+
+  /* sizes */
+  --size-site-max: 1100px;
 }

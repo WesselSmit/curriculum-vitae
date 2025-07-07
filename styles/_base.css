@@ -6,7 +6,9 @@ html {
 
 body {
   overflow-x: hidden;
-  min-height: 100dvh;
+  min-block-size: 100dvh;
+  padding-block-end: var(--spacing-m);
+  padding-inline: var(--spacing-m);
   background-color: var(--color-white);
   color: var(--color-black);
 
@@ -19,10 +21,20 @@ body {
   text-wrap: balance;
 }
 
+body {
+
+  >header,
+  >main,
+  >footer {
+    max-inline-size: var(--size-site-max);
+    margin-inline: auto;
+  }
+}
+
 img,
 picture {
   display: block;
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {

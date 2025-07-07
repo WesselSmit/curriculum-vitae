@@ -1,7 +1,7 @@
 .h1 {
   margin-block-end: var(--spacing-xxxl);
   font-weight: var(--font-weight-extrabold);
-  font-size: 10.3dvw;
+  font-size: 9.8dvw;
   text-align: center;
   text-transform: uppercase;
   line-height: 1;
@@ -11,4 +11,5 @@
   margin-block-end: var(--spacing-m);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-title);
+  line-height: 1;
 }

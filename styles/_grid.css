@@ -1,13 +1,13 @@
-.grid-1-1 {
+[class^="grid-"] {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column: var(--spacing-l);
-  grid-row: var(--spacing-s);
+  column-gap: var(--spacing-l);
+  row-gap: var(--spacing-s);
 }
 
-.grid-1-2-3 {
-  display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
-  grid-column: var(--spacing-l);
-  grid-row: var(--spacing-s);
+.grid-triple {
+  grid-template-columns: 1fr 2fr 45%;
+}
+
+.grid-even {
+  grid-template-columns: 1fr 45%;
 }
