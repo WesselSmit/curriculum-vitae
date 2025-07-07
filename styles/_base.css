@@ -1,3 +1,8 @@
+*:focus-visible {
+  outline: 3px dashed var(--color-blue);
+  outline-offset: 3px;
+}
+
 html {
   /* reset default font-size to 10px for easier calculations (62.5% of 16px [browser default] = 10px) */
   font-size: 62.5%;
@@ -39,6 +44,13 @@ picture {
 
 a {
   color: var(--color-black);
+
+  &:hover,
+  &:focus,
+  &:visited:hover,
+  &:visited:focus {
+    color: var(--color-blue);
+  }
 
   &:visited {
     color: var(--color-gray);
