@@ -3,15 +3,13 @@
   --font-family: Outfit, -apple-system, blinkmacsystemfont, 'Roboto',
     'Helvetica Neue', sans-serif;
 
-  --font-size-body: 2rem;
-  --font-size-title: 5rem;
-
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
   /* colors */
   --color-black: #000000;
+  --color-gray: #3e3e3e;
   --color-white: #FCF8EE;
 
   /* spacings */

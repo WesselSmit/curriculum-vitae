@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-family);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-body);
+  font-size: 2rem;
   text-rendering: optimizeSpeed;
   text-wrap: balance;
 }
@@ -35,6 +35,24 @@ img,
 picture {
   display: block;
   max-inline-size: 100%;
+}
+
+a {
+  color: var(--color-black);
+
+  &:visited {
+    color: var(--color-gray);
+  }
+
+  &[target="_blank"]::after {
+    content: "\2197";
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &:not([href^="mailto:"]):not([href^="tel:"]) {
+    hyphens: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

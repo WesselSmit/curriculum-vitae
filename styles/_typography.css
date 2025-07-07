@@ -1,5 +1,5 @@
 .h1 {
-  margin-block-end: var(--spacing-xxxl);
+  margin-block-end: var(--spacing-l);
   font-weight: var(--font-weight-extrabold);
   font-size: 9.8dvw;
   text-align: center;
@@ -8,8 +8,19 @@
 }
 
 .h2 {
-  margin-block-end: var(--spacing-m);
+  margin-block-end: var(--spacing-s);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-title);
+  font-size: 3rem;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    margin-block-end: var(--spacing-xxxl);
+  }
+
+  .h2 {
+    font-size: 5rem;
+    margin-block-end: var(--spacing-m);
+  }
 }
