@@ -31,6 +31,9 @@ body {
   >header,
   >main,
   >footer {
+    /* container is used to scale h1 title based on container size */
+    container-type: inline-size;
+    container-name: content;
     max-inline-size: var(--size-site-max);
     margin-inline: auto;
   }
