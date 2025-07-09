@@ -1,0 +1,11 @@
+.obfuscated-contact {
+  border: unset;
+  background: unset;
+  margin: unset;
+  padding: unset;
+  text-align: initial;
+}
+
+.obfuscated-contact:not(.revealed) {
+  cursor: pointer;
+}

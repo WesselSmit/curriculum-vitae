@@ -45,7 +45,8 @@ picture {
   max-inline-size: 100%;
 }
 
-a {
+a,
+button {
   color: var(--color-black);
 
   &:hover,
@@ -54,7 +55,9 @@ a {
   &:visited:focus {
     color: var(--color-blue);
   }
+}
 
+a {
   &:visited {
     color: var(--color-gray);
   }
