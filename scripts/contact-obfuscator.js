@@ -60,6 +60,9 @@ function reveal(element) {
   const link = createLink(type);
 
   element.replaceWith(link);
+
+  // set focus and ensure screen readers announce the newly revealed link
+  link.focus();
 }
 
 function createLink(type) {
