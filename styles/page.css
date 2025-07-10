@@ -35,6 +35,23 @@ p {
     margin-block-end: var(--spacing-xxl);
   }
 
+  section article:not(:first-of-type) {
+    dt {
+      /* same as sr-only class */
+      overflow: hidden;
+      position: absolute;
+      block-size: 1px;
+      inline-size: 1px;
+      white-space: nowrap;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+    }
+
+    dd {
+      grid-column: 2;
+    }
+  }
+
   .grid-triple:not(:last-of-type) {
     margin-block-end: var(--spacing-xl);
   }

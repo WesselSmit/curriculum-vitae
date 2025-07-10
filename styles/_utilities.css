@@ -1,5 +1,4 @@
-.sr-only,
-.visually-hidden {
+.sr-only {
   overflow: hidden;
   position: absolute;
   block-size: 1px;
