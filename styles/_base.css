@@ -16,7 +16,6 @@ body {
   padding-inline: var(--spacing-m);
   background-color: var(--color-white);
   color: var(--color-black);
-
   /* set default font-size to 1.6rem to negate the reset above */
   font-size: 1.6rem;
   font-family: var(--font-family);
@@ -26,17 +25,14 @@ body {
   text-wrap: balance;
 }
 
-body {
-
-  >header,
-  >main,
-  >footer {
-    /* container is used to scale h1 title based on container size */
-    container-type: inline-size;
-    container-name: content;
-    max-inline-size: var(--size-site-max);
-    margin-inline: auto;
-  }
+body > header,
+body > main,
+body > footer {
+  /* container is used to scale h1 title based on container size */
+  container-type: inline-size;
+  container-name: content;
+  max-inline-size: var(--size-site-max);
+  margin-inline: auto;
 }
 
 img,
@@ -58,26 +54,22 @@ button {
 }
 
 a {
-  &:visited {
-    color: var(--color-gray);
-  }
-
-  &[target="_blank"]::after {
-    content: "\2197";
-    display: inline-block;
-    text-decoration: none;
-  }
-
   &:not([href^="mailto:"]):not([href^="tel:"]) {
     hyphens: auto;
   }
+
+  &:visited {
+    color: var(--color-gray);
+  }
+}
+
+a[target="_blank"]::after {
+  content: "\2197";
+  display: inline-block;
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
   *,
   *::before,
   *::after {
@@ -85,5 +77,9 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 1ms !important;
     scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }

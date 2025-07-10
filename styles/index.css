@@ -1,3 +1,4 @@
+/* css setup */
 @import url('_reset.css') layer(reset);
 @import url('_layers.css');
 @import url('_fonts.css');
@@ -6,4 +7,6 @@
 @import url('_grid.css') layer(base);
 @import url('_typography.css') layer(typography);
 @import url('_utilities.css') layer(utilities);
+
+/* scripts */
 @import url('_contact-obfuscator.css') layer(scripts);

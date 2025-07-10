@@ -6,7 +6,7 @@ section {
   margin-block-end: var(--spacing-xl);
 }
 
-.grid-triple>p {
+.grid-triple > p {
   grid-column: span 2;
 }
 
@@ -35,6 +35,14 @@ p {
     margin-block-end: var(--spacing-xxl);
   }
 
+  .grid-triple:not(:last-of-type) {
+    margin-block-end: var(--spacing-xl);
+  }
+
+  .grid-triple > p {
+    grid-column: unset;
+  }
+
   section article:not(:first-of-type) {
     dt {
       /* same as sr-only class */
@@ -52,22 +60,11 @@ p {
     }
   }
 
-  .grid-triple:not(:last-of-type) {
-    margin-block-end: var(--spacing-xl);
-  }
-
-  .grid-triple>p {
-    grid-column: unset;
-  }
-
   dl {
     column-gap: var(--spacing-l);
   }
 
-  footer {
-    >* {
-      grid-column: 2;
-    }
+  footer > * {
+    grid-column: 2;
   }
-
 }

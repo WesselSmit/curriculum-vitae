@@ -61,7 +61,7 @@ function reveal(element) {
 
   element.replaceWith(link);
 
-  // set focus and ensure screen readers announce the newly revealed link
+  // set focus to ensure screen readers announce the newly revealed link
   link.focus();
 }
 
