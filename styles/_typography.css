@@ -9,7 +9,7 @@
 @container content (min-width: 0px) {
   .h1 {
     /* magic number that works for "curriculum vitae" string */
-    font-size: 10.2cqw;
+    font-size: 10.3cqw;
   }
 }
 
