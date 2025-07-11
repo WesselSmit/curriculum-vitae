@@ -4,6 +4,8 @@
 }
 
 html {
+  overflow-x: hidden;
+  block-size: 100%;
   /* reset default font-size to 10px for easier calculations (62.5% of 16px [browser default] = 10px) */
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -11,7 +13,6 @@ html {
 
 body {
   overflow-x: hidden;
-  min-block-size: 100vh;
   padding-block-end: var(--spacing-m);
   padding-inline: var(--spacing-m);
   background-color: var(--color-white);
