@@ -11,7 +11,7 @@ html {
 
 body {
   overflow-x: hidden;
-  min-block-size: 100dvh;
+  min-block-size: 100vh;
   padding-block-end: var(--spacing-m);
   padding-inline: var(--spacing-m);
   background-color: var(--color-white);
